@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_disciplinary_images",
+  "info": {
+    "name": "Image",
+    "icon": "certificate"
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "component",
+      "repeatable": true,
+      "component": "other.header"
+    },
+    "imgUrl": {
+      "type": "string"
+    },
+    "thumbnailUrl": {
+      "type": "string"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

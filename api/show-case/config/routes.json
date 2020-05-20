@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/show-cases",
+      "handler": "show-case.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/show-cases/count",
+      "handler": "show-case.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/show-cases/:id",
+      "handler": "show-case.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/show-cases",
+      "handler": "show-case.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/show-cases/:id",
+      "handler": "show-case.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/show-cases/:id",
+      "handler": "show-case.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

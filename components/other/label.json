@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_other_labels",
+  "info": {
+    "name": "Label",
+    "icon": "pastafarianism"
+  },
+  "options": {},
+  "attributes": {
+    "labelTitle": {
+      "type": "string"
+    },
+    "labelIcon": {
+      "type": "string"
+    }
+  }
+}

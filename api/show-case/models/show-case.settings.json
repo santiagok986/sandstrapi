@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "show_cases",
+  "info": {
+    "name": "showCase"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "news_item": {
+      "via": "show_cases",
+      "model": "news-item"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_categories",
+  "info": {
+    "name": "NewsCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "path": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "ordering": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "news_items": {
+      "collection": "news-item",
+      "via": "news_categories",
+      "dominant": true
+    }
+  }
+}

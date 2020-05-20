@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "licenses",
+  "info": {
+    "name": "License"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "uri": {
+      "type": "string"
+    },
+    "news_items": {
+      "via": "license",
+      "collection": "news-item"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

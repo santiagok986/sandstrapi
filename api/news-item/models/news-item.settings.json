@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_items",
+  "info": {
+    "name": "NewsItems"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "active": {
+      "type": "boolean"
+    },
+    "counter": {
+      "type": "integer"
+    },
+    "label": {
+      "type": "component",
+      "repeatable": true,
+      "component": "other.label"
+    },
+    "title": {
+      "type": "string"
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": true,
+      "component": "disciplinary.image"
+    },
+    "uri": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "license": {
+      "model": "license",
+      "via": "news_items"
+    },
+    "show_cases": {
+      "collection": "show-case",
+      "via": "news_item"
+    },
+    "news_categories": {
+      "via": "news_items",
+      "collection": "news-category"
+    }
+  }
+}

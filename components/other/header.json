@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_other_headers",
+  "info": {
+    "name": "Header",
+    "icon": "grin"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}
