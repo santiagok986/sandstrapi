@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "People"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "function": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": true,
+      "component": "disciplinary.image"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "news_item": {
+      "model": "news-item",
+      "via": "people"
+    },
+    "label": {
+      "type": "component",
+      "repeatable": true,
+      "component": "other.label"
+    },
+    "license": {
+      "model": "license"
+    },
+    "tags": {
+      "via": "person",
+      "collection": "tag"
+    }
+  }
+}

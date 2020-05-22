@@ -57,6 +57,14 @@
     "news_categories": {
       "via": "news_items",
       "collection": "news-category"
+    },
+    "people": {
+      "via": "news_item",
+      "collection": "people"
+    },
+    "tags": {
+      "via": "news_item",
+      "collection": "tag"
     }
   }
 }
