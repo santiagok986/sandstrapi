@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rubriques",
+      "handler": "rubriques.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rubriques/count",
+      "handler": "rubriques.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rubriques/:id",
+      "handler": "rubriques.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rubriques",
+      "handler": "rubriques.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rubriques/:id",
+      "handler": "rubriques.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rubriques/:id",
+      "handler": "rubriques.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
