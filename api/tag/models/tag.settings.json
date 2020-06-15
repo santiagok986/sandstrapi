@@ -16,12 +16,12 @@
       "type": "string"
     },
     "person": {
-      "model": "people",
-      "via": "tags"
+      "via": "tags",
+      "model": "people"
     },
     "news_item": {
-      "model": "news-item",
-      "via": "tags"
+      "via": "tags",
+      "model": "news-item"
     }
   }
 }

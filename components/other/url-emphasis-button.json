@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_other_url_emphasis_buttons",
+  "info": {
+    "name": "urlEmphasisButton",
+    "icon": "gift"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30,
+      "default": "Guide"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

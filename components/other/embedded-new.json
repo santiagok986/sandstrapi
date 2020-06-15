@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_other_embedded_news",
+  "info": {
+    "name": "EmbeddedNew",
+    "icon": "table"
+  },
+  "options": {},
+  "attributes": {
+    "newID": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

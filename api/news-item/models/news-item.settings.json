@@ -55,16 +55,21 @@
       "via": "news_item"
     },
     "news_categories": {
-      "via": "news_items",
-      "collection": "news-category"
+      "collection": "news-category",
+      "via": "news_items"
     },
     "people": {
-      "via": "news_item",
-      "collection": "people"
+      "collection": "people",
+      "via": "news_item"
     },
     "tags": {
-      "via": "news_item",
-      "collection": "tag"
+      "collection": "tag",
+      "via": "news_item"
+    },
+    "urlEmphasisButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "other.url-emphasis-button"
     }
   }
 }

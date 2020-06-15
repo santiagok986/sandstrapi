@@ -40,8 +40,8 @@
       "type": "boolean"
     },
     "news_items": {
-      "collection": "news-item",
       "via": "news_categories",
+      "collection": "news-item",
       "dominant": true
     }
   }
