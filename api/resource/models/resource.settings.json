@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources",
+  "info": {
+    "name": "Resource"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "course": {
+      "via": "resources",
+      "model": "course"
+    },
+    "assessments": {
+      "collection": "assessment",
+      "via": "resources",
+      "dominant": true
+    },
+    "content": {
+      "type": "json"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "identity": {
+      "type": "string"
+    },
+    "activities": {
+      "via": "resources",
+      "collection": "activity"
+    },
+    "tasks": {
+      "via": "resources",
+      "collection": "task"
+    }
+  }
+}

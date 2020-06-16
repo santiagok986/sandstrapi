@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "designer": {
+      "type": "string"
+    },
+    "instructor": {
+      "type": "string"
+    },
+    "mission": {
+      "type": "richtext"
+    },
+    "terminalObjective": {
+      "type": "richtext"
+    },
+    "lessonPlanUrl": {
+      "type": "string"
+    },
+    "content": {
+      "type": "json"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "assessments": {
+      "collection": "assessment",
+      "via": "course"
+    },
+    "why": {
+      "type": "text"
+    },
+    "what": {
+      "type": "text"
+    },
+    "how": {
+      "type": "text"
+    },
+    "who": {
+      "type": "text"
+    },
+    "objectives": {
+      "collection": "objective",
+      "via": "course"
+    },
+    "resources": {
+      "collection": "resource",
+      "via": "course"
+    },
+    "themes": {
+      "collection": "theme",
+      "via": "course"
+    },
+    "activities": {
+      "collection": "activity",
+      "via": "courses"
+    },
+    "tasks": {
+      "collection": "task",
+      "via": "courses",
+      "dominant": true
+    }
+  }
+}

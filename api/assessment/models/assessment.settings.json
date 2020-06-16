@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assessments",
+  "info": {
+    "name": "Assessment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "course": {
+      "via": "assessments",
+      "model": "course"
+    },
+    "value": {
+      "type": "integer"
+    },
+    "synchorne": {
+      "type": "boolean"
+    },
+    "summative": {
+      "type": "boolean"
+    },
+    "content": {
+      "type": "json"
+    },
+    "identity": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "objectives": {
+      "via": "assessments",
+      "collection": "objective"
+    },
+    "resources": {
+      "via": "assessments",
+      "collection": "resource"
+    },
+    "activities": {
+      "via": "assessments",
+      "collection": "activity"
+    }
+  }
+}

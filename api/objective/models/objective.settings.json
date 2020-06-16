@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objectives",
+  "info": {
+    "name": "Objective"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "course": {
+      "via": "objectives",
+      "model": "course"
+    },
+    "assessments": {
+      "collection": "assessment",
+      "via": "objectives",
+      "dominant": true
+    },
+    "content": {
+      "type": "json"
+    },
+    "identity": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "tasks": {
+      "via": "objectives",
+      "collection": "task"
+    }
+  }
+}

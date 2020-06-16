@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "name": "task"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "json"
+    },
+    "identity": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "instruction": {
+      "type": "string"
+    },
+    "activities": {
+      "collection": "activity",
+      "via": "tasks",
+      "dominant": true
+    },
+    "resources": {
+      "collection": "resource",
+      "via": "tasks",
+      "dominant": true
+    },
+    "objectives": {
+      "collection": "objective",
+      "via": "tasks",
+      "dominant": true
+    },
+    "courses": {
+      "via": "tasks",
+      "collection": "course"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "themes",
+  "info": {
+    "name": "theme"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "json"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "identity": {
+      "type": "string"
+    },
+    "course": {
+      "via": "themes",
+      "model": "course"
+    },
+    "activities": {
+      "via": "themes",
+      "collection": "activity"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activities",
+  "info": {
+    "name": "Activity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "json"
+    },
+    "assessments": {
+      "collection": "assessment",
+      "via": "activities",
+      "dominant": true
+    },
+    "identity": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "resources": {
+      "collection": "resource",
+      "via": "activities",
+      "dominant": true
+    },
+    "tasks": {
+      "via": "activities",
+      "collection": "task"
+    },
+    "themes": {
+      "collection": "theme",
+      "via": "activities",
+      "dominant": true
+    },
+    "courses": {
+      "via": "activities",
+      "collection": "course",
+      "dominant": true
+    }
+  }
+}
