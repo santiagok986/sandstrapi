@@ -9,8 +9,41 @@
     "timestamps": true
   },
   "attributes": {
-    "Title": {
+    "head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "other.header",
+      "required": true
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "newsSections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "other.news-section"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "author": {
       "type": "string"
+    },
+    "showcases": {
+      "collection": "show-case",
+      "via": "rubriques_items",
+      "dominant": true
+    },
+    "image": {
+      "type": "component",
+      "repeatable": true,
+      "component": "disciplinary.image"
+    },
+    "counter": {
+      "type": "integer",
+      "required": false,
+      "default": 1,
+      "min": 0
     }
   }
 }

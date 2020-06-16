@@ -21,7 +21,7 @@
     "title": {
       "type": "string"
     },
-    "Image": {
+    "image": {
       "type": "component",
       "repeatable": true,
       "component": "disciplinary.image"
@@ -36,8 +36,8 @@
       "type": "richtext"
     },
     "news_item": {
-      "model": "news-item",
-      "via": "people"
+      "via": "people",
+      "model": "news-item"
     },
     "label": {
       "type": "component",
@@ -48,8 +48,8 @@
       "model": "license"
     },
     "tags": {
-      "via": "person",
-      "collection": "tag"
+      "collection": "tag",
+      "via": "person"
     }
   }
 }

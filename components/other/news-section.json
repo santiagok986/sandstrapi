@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_other_news_sections",
+  "info": {
+    "name": "newsSection",
+    "icon": "th-list"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "default": "Section",
+      "required": true
+    },
+    "sectionIcon": {
+      "type": "string",
+      "default": "mdi-elephant",
+      "required": true
+    },
+    "embeddedNews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "other.embedded-new",
+      "required": true,
+      "min": 1
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "urlEmphasisButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "other.url-emphasis-button"
+    }
+  }
+}
