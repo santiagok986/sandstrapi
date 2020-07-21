@@ -12,10 +12,14 @@
       "component": "other.header"
     },
     "imgUrl": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "default": "https://live.staticflickr.com/65535/49722989798_2fb8bc5881_b.jpg"
     },
     "thumbnailUrl": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "default": "https://live.staticflickr.com/65535/49722989798_2fb8bc5881_b.jpg"
     },
     "copyright": {
       "type": "string"

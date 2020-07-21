@@ -35,9 +35,10 @@
     "text": {
       "type": "richtext"
     },
-    "news_item": {
+    "news_items": {
+      "collection": "news-item",
       "via": "people",
-      "model": "news-item"
+      "dominant": true
     },
     "label": {
       "type": "component",
@@ -48,8 +49,8 @@
       "model": "license"
     },
     "tags": {
-      "collection": "tag",
-      "via": "person"
+      "via": "people",
+      "collection": "tag"
     }
   }
 }

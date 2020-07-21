@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepage_buttons",
+  "info": {
+    "name": "homepageButton"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "buttonTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Besoins techniques"
+    },
+    "buttonType": {
+      "type": "enumeration",
+      "enum": [
+        "list",
+        "mailto"
+      ],
+      "required": true,
+      "default": "list"
+    },
+    "data": {
+      "type": "string"
+    },
+    "news_categories": {
+      "via": "homepage_button",
+      "collection": "news-category"
+    }
+  }
+}

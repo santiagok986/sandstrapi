@@ -15,13 +15,15 @@
     "labelIcon": {
       "type": "string"
     },
-    "person": {
+    "people": {
+      "collection": "people",
       "via": "tags",
-      "model": "people"
+      "dominant": true
     },
-    "news_item": {
+    "news_items": {
+      "collection": "news-item",
       "via": "tags",
-      "model": "news-item"
+      "dominant": true
     }
   }
 }

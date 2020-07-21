@@ -40,9 +40,13 @@
       "type": "boolean"
     },
     "news_items": {
-      "via": "news_categories",
       "collection": "news-item",
+      "via": "news_categories",
       "dominant": true
+    },
+    "homepage_button": {
+      "model": "homepage-button",
+      "via": "news_categories"
     }
   }
 }
